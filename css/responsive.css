@@ -1,0 +1,86 @@
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .main-nav ul {
+    gap: 1rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-form {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-grid,
+  .team-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .property-features {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+}
