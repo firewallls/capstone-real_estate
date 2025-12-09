@@ -3,147 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DreamHome Realty - Find Your Perfect Home</title>
+  <title>Magicbricks - India's No. 1 Property Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header-footer.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-<!-- Header -->
-<header class="main-header">
-  <div class="container">
-    <div class="logo">
-      <h1><a href="index.html">DreamHome Realty</a></h1>
+<header>
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="contact-info">
+        <span><i class="fas fa-phone"></i> 1800-120-1234</span>
+        <span><i class="fas fa-envelope"></i> help@magicbricks.com</span>
+      </div>
+      <div class="auth-links">
+        <a href="#"><i class="fas fa-user"></i> Login</a>
+        <a href="#"><i class="fas fa-user-plus"></i> Sign Up</a>
+      </div>
     </div>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </div>
+
+  <div class="container main-header">
+    <div class="logo">
+      <div class="logo-text">Magicbricks</div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search for locality, landmark, project or builder">
+      <button><i class="fas fa-search"></i> Search</button>
+    </div>
+
+    <div class="user-actions">
+      <button class="post-property"><i class="fas fa-plus"></i> Post Property Free</button>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#" class="active">Buy</a></li>
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">PG</a></li>
+        <li><a href="#">Commercial</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Home Loans</a></li>
+        <li><a href="#">Property Services</a></li>
+        <li><a href="#">Advice</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
-<!-- Hero Section -->
 <section class="hero">
-  <div class="hero-content">
-    <h2>Find Your Dream Home Today</h2>
-    <p>Discover the perfect property from our extensive collection of homes and apartments</p>
-    <a href="properties.html" class="btn btn-primary">Browse Properties</a>
-  </div>
-</section>
-
-<!-- Featured Properties -->
-<section class="featured-properties">
   <div class="container">
-    <h2 class="section-title">Featured Properties</h2>
-    <div class="properties-grid">
-      <div class="property-card">
-        <div class="property-image">
-          <img src="" alt="">
-          <span class="property-price">$450,000</span>
-        </div>
-        <div class="property-details">
-          <h3>Modern Downtown Apartment</h3>
-          <p class="property-location">Downtown, New York</p>
-          <div class="property-features">
-            <span>3 Beds</span>
-            <span>2 Baths</span>
-            <span>1,200 sqft</span>
-          </div>
-        </div>
-      </div>
+    <h1>Find Your Dream Home</h1>
+    <p>India's No. 1 Property Site. Search properties for sale and rent from lakhs of listings.</p>
+  </div>
+</section>
 
-      <div class="property-card">
-        <div class="property-image">
-          <img src="" alt="">
-          <span class="property-price">$750,000</span>
-        </div>
-        <div class="property-details">
-          <h3>Spacious Suburban House</h3>
-          <p class="property-location">Green Valley, California</p>
-          <div class="property-features">
-            <span>4 Beds</span>
-            <span>3 Baths</span>
-            <span>2,500 sqft</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="property-card">
-        <div class="property-image">
-          <img src="" alt="">
-          <span class="property-price">$1,200,000</span>
-        </div>
-        <div class="property-details">
-          <h3>Luxury Waterfront Villa</h3>
-          <p class="property-location">Ocean View, Florida</p>
-          <div class="property-features">
-            <span>5 Beds</span>
-            <span>4 Baths</span>
-            <span>4,000 sqft</span>
-          </div>
-        </div>
-      </div>
+<section class="container">
+  <div class="search-options">
+    <div class="option-tabs">
+      <div class="option-tab active">Buy</div>
+      <div class="option-tab">Rent</div>
+      <div class="option-tab">PG</div>
+      <div class="option-tab">Commercial</div>
     </div>
-    <div class="text-center">
-      <a href="properties.html" class="btn btn-secondary">View All Properties</a>
+
+    <div class="search-filters">
+      <div class="filter-group">
+        <label for="city">City</label>
+        <select id="city">
+          <option>Select City</option>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+          <option>Bangalore</option>
+          <option>Hyderabad</option>
+          <option>Chennai</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="locality">Locality</label>
+        <select id="locality">
+          <option>Select Locality</option>
+          <option>All Localities</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="property-type">Property Type</label>
+        <select id="property-type">
+          <option>Residential</option>
+          <option>Apartment</option>
+          <option>Independent House</option>
+          <option>Villa</option>
+          <option>Plot</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="budget">Budget</label>
+        <select id="budget">
+          <option>Select Budget</option>
+          <option>Under ₹50 Lakhs</option>
+          <option>₹50 Lakhs - ₹1 Crore</option>
+          <option>₹1 Crore - ₹2 Crores</option>
+          <option>Above ₹2 Crores</option>
+        </select>
+      </div>
+
+      <button class="search-btn"><i class="fas fa-search"></i> Search Properties</button>
     </div>
   </div>
 </section>
 
-<!-- Services Section -->
-<section class="services">
-  <div class="container">
-    <h2 class="section-title">Our Services</h2>
-    <div class="services-grid">
-      <div class="service-item">
-        <h3>Buying</h3>
-        <p>Find your perfect home with our expert guidance and extensive property database.</p>
+<section class="container">
+  <h2 class="section-title">Featured Properties</h2>
+
+  <div class="property-listings">
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title">Our Services</h2>
+
+  <div class="services">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-home"></i>
       </div>
-      <div class="service-item">
-        <h3>Selling</h3>
-        <p>Get the best value for your property with our marketing expertise and negotiation skills.</p>
+      <h3>Buy Property</h3>
+      <p>Find your dream home from lakhs of residential properties for sale.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-key"></i>
       </div>
-      <div class="service-item">
-        <h3>Renting</h3>
-        <p>Discover rental properties that match your lifestyle and budget requirements.</p>
+      <h3>Rent Property</h3>
+      <p>Search from verified residential properties available for rent.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-building"></i>
       </div>
+      <h3>Post Property</h3>
+      <p>List your property for sale or rent for free on India's No. 1 property site.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-handshake"></i>
+      </div>
+      <h3>Home Loans</h3>
+      <p>Get home loans from top banks with attractive interest rates.</p>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="main-footer">
+<footer>
   <div class="container">
     <div class="footer-content">
-      <div class="footer-section">
-        <h3>DreamHome Realty</h3>
-        <p>Your trusted partner in finding the perfect home since 2005.</p>
+      <div class="footer-column">
+        <h3>Magicbricks</h3>
+        <p>India's No. 1 Property Portal. We help you find your dream home from lakhs of properties listed with us.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
-      <div class="footer-section">
+
+      <div class="footer-column">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="properties.html">Properties</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">Rent</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">PG</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Home Loans</a></li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h3>Contact Info</h3>
-        <p>123 Real Estate Ave, Suite 100</p>
-        <p>New York, NY 10001</p>
-        <p>Phone: (555) 123-4567</p>
-        <p>Email: info@dreamhomerealty.com</p>
+
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">About Magicbricks</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Popular Cities</h3>
+        <ul>
+          <li><a href="#">Properties in Mumbai</a></li>
+          <li><a href="#">Properties in Delhi</a></li>
+          <li><a href="#">Properties in Bangalore</a></li>
+          <li><a href="#">Properties in Hyderabad</a></li>
+          <li><a href="#">Properties in Chennai</a></li>
+          <li><a href="#">Properties in Pune</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>2023 DreamHome Realty. All rights reserved.</p>
+
+    <div class="copyright">
+      <p>&copy; 2025 Magicbricks.com. All rights reserved.</p>
+      <p>Magicbricks is a leading real estate portal in India for buying, selling, and renting properties.</p>
     </div>
   </div>
 </footer>
+
+<script src="js/properties.js"></script>
+<script src="js/search.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

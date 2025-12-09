@@ -1,71 +1,180 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-  color: black;
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .search-bar {
+    width: 400px;
+  }
 }
 
-.nav-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
+@media (max-width: 1024px) {
+  .property-listings, .services, .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-btn {
+    grid-column: span 2;
+  }
+
+  .search-bar {
+    width: 350px;
+  }
 }
 
-.nav {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  background: transparent;
-}
-.nav-item {
-  cursor: pointer;
-}
-.nav-item:hover {
-  cursor: pointer;
-  color: rgb(156 163 175);
-}
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
 
-.SignUp {
-  background: #fff;
-  padding: 0.5rem 2rem;
-  border-radius: 45px;
-  border: none;
-  display: none;
-}
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+  }
 
-.nav-list{
-  display: none;
-}
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-@media (min-width: 768px) {
-  .SignUp {
+  .nav-links li {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .property-listings, .services, .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .search-btn {
+    grid-column: span 1;
+  }
+
+  .top-bar-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .contact-info span {
     display: block;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 
-  .nav {
-    padding: 1rem 5rem;
+  .auth-links a {
+    margin: 0 10px;
   }
 
-  .nav-list{
-    display:flex;
-    gap: 1.75rem;
+  .hero h1 {
+    font-size: 28px;
   }
 
-  .nav-item {
-    color: white;
+  .hero p {
+    font-size: 16px;
   }
 
+  .search-options {
+    padding: 20px;
+    margin-top: -30px;
+  }
+
+  .option-tabs {
+    flex-wrap: wrap;
+  }
+
+  .option-tab {
+    flex: 1 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin: 30px 0 15px;
+  }
+
+  .property-price {
+    font-size: 18px;
+  }
+
+  .property-title {
+    font-size: 15px;
+  }
 }
 
-@media (min-width: 1024px) {
-  .nav {
-    padding-left: 8rem;
-    padding-right: 8rem;
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .search-bar button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .post-property {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+
+  .footer-content {
+    gap: 20px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-column ul li a {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
 }
