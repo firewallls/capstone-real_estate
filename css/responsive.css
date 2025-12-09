@@ -1,86 +1,71 @@
-/* Responsive Design */
-@media (max-width: 992px) {
-  .hero-content h2 {
-    font-size: 2.5rem;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
-@media (max-width: 768px) {
-  .main-header .container {
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-
-  .logo {
-    margin-bottom: 1rem;
-  }
-
-  .main-nav ul {
-    gap: 1rem;
-  }
-
-  .hero {
-    height: 60vh;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .properties-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .filter-form {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
-@media (max-width: 576px) {
-  .container {
-    width: 95%;
+.nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: transparent;
+}
+.nav-item {
+  cursor: pointer;
+}
+.nav-item:hover {
+  cursor: pointer;
+  color: rgb(156 163 175);
+}
+
+.SignUp {
+  background: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 45px;
+  border: none;
+  display: none;
+}
+
+.nav-list{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .SignUp {
+    display: block;
   }
 
-  .hero {
-    height: 50vh;
+  .nav {
+    padding: 1rem 5rem;
   }
 
-  .hero-content h2 {
-    font-size: 1.8rem;
+  .nav-list{
+    display:flex;
+    gap: 1.75rem;
   }
 
-  .services-grid,
-  .team-grid,
-  .stats-grid {
-    grid-template-columns: 1fr;
+  .nav-item {
+    color: white;
   }
 
-  .property-features {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+}
 
-  .pagination {
-    flex-wrap: wrap;
+@media (min-width: 1024px) {
+  .nav {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
