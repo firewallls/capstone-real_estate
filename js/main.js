@@ -1,9 +1,9 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   initializeProperties();
-//   initializeDynamicContent();
-//   initializeNavigation();
-//   initializeEventListeners();
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  initializeProperties();
+  initializeDynamicContent();
+  initializeNavigation();
+  initializeEventListeners();
+});
 
 function initializeProperties() {
   const propertyListings = document.querySelector('.property-listings');
